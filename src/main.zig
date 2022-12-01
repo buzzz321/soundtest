@@ -18,8 +18,8 @@ pub fn main() !void {
      defer engine.destroy();
 
     const music = try engine.createSoundFromFile(
-        //content_dir ++ "elimination.ogg",
-        content_dir ++ "broke.mp3",
+        content_dir ++ "elimination.ogg",
+        //content_dir ++ "broke.mp3",
 
         .{ .flags = .{ .stream = true } },
     );
